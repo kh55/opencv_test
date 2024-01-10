@@ -7,9 +7,9 @@ image = cv.imread(imagefile)
 grayscale = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 
 # 顔検出
-#cascade = cv.CascadeClassifier("/Users/hyoudoukazuhiko/Documents/study/opencv_test1/opencv_test1/lib/python3.9/site-packages/cv2/data/haarcascade_frontalface_default.xml")
+#cascade = cv.CascadeClassifier("./opencv_test1/opencv_test1/lib/python3.9/site-packages/cv2/data/haarcascade_frontalface_default.xml")
 # 瞳検出
-cascade = cv.CascadeClassifier("/Users/hyoudoukazuhiko/Documents/study/opencv_test1/opencv_test1/lib/python3.9/site-packages/cv2/data/haarcascade_eye.xml")
+cascade = cv.CascadeClassifier("./opencv_test1/opencv_test1/lib/python3.9/site-packages/cv2/data/haarcascade_eye.xml")
 
 #results = cascade.detectMultiScale(grayscale, minSize=(50, 50))
 results = cascade.detectMultiScale(grayscale)
